@@ -549,7 +549,9 @@
     var expectedUrls = [
   "https://spacecatgame.netlify.app",
   "https://spacecatgames.onrender.com",
-  "https://scg.meowcat.site"
+  "https://scg.meowcat.site",
+  "https://space-cat-games.onrender.com/",
+
 ];
 
 var currentUrl = window.location.href;
@@ -559,7 +561,7 @@ var matchFound = expectedUrls.some(url => currentUrl.startsWith(url));
 if (!matchFound) {
   var header = document.getElementById('main-header');
   if (header) {
-    header.textContent = "Developer's Edition.";
+    header.textContent = "Space Cat Games: Developer's Edition.";
     header.style.color = "red";
   }
 }
