@@ -11,15 +11,15 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTZS202J2Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTZS202J2Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-TTZS202J2Q');
-</script>
+    gtag('config', 'G-TTZS202J2Q');
+  </script>
 
 </head>
 
@@ -72,7 +72,7 @@
         <li>Meowcat</li>
       </ul>
 
-     
+
 
       <div class="cta-section">
         <a href="https://discord.gg/8hx2hnGPhH" class="btn">Join our Discord Server</a>
@@ -117,15 +117,15 @@
             href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
         <li><strong>Git: </strong>Source Control Management System used at Starry Systems. <a
             href="https://git-scm.com/">https://git-scm.com/</a></li>
-            <li><strong>Jekyll: </strong>Static Site Converter. <a
-              href="https://jekyllrb.com/">https://jekyllrb.com/</a></li>
-              <li><strong>OwO </strong>Huohhhh. fuwwy stwing twansfowmew ;3<a
-                href="https://yarnpkg.com/package?q=owo&name=%40zuzak%2Fowo"> OwO on Yarn</a></li>
+        <li><strong>Jekyll: </strong>Static Site Converter. <a href="https://jekyllrb.com/">https://jekyllrb.com/</a>
+        </li>
+        <li><strong>OwO </strong>Huohhhh. fuwwy stwing twansfowmew ;3<a
+            href="https://yarnpkg.com/package?q=owo&name=%40zuzak%2Fowo"> OwO on Yarn</a></li>
       </ul>
     </section>
 
-    
-    </div>
+
+  </div>
   </div>
 
   <footer>
@@ -140,22 +140,16 @@
           <a href="archive.html">Archive</a>
         </div>
         <p class="copyright">© 2025 Nijika Softworks & Starry Systems. All rights reserved.</p>
-        <a href="https://nijikasoftworks.meowcat.site/"><img
-          src="images/nsobgo.png"
-          height="150"
-          width="500"
-        /></a>
+        <a href="https://nijikasoftworks.meowcat.site/"><img src="images/ns_yellow.png" height="150" width="500" /></a>
         <a href="https://github.com/Starry-Systems/"><img
-          src="https://avatars.githubusercontent.com/u/241321890?s=200&v=4"
-          height="150"
-        /></a>
+            src="https://avatars.githubusercontent.com/u/241321890?s=200&v=4" height="150" /></a>
       </div>
     </div>
   </footer>
 
   </script>
   <!-- FPS Counter -->
-<div id="fps-counter" style="
+  <div id="fps-counter" style="
   position: fixed;
   top: 10px;
   right: 10px;
@@ -168,24 +162,24 @@
   z-index: 9999;
   pointer-events: none;
 ">FPS: --</div>
-<script>
-  (function() {
-    let lastFrame = performance.now();
-    let frames = 0;
-    let fps = 0;
-    function loop(now) {
-      frames++;
-      if (now - lastFrame >= 1000) {
-        fps = frames;
-        frames = 0;
-        lastFrame = now;
-        document.getElementById('fps-counter').textContent = 'FPS: ' + fps;
+  <script>
+    (function () {
+      let lastFrame = performance.now();
+      let frames = 0;
+      let fps = 0;
+      function loop(now) {
+        frames++;
+        if (now - lastFrame >= 1000) {
+          fps = frames;
+          frames = 0;
+          lastFrame = now;
+          document.getElementById('fps-counter').textContent = 'FPS: ' + fps;
+        }
+        requestAnimationFrame(loop);
       }
       requestAnimationFrame(loop);
-    }
-    requestAnimationFrame(loop);
-  })();
-</script>
+    })();
+  </script>
   <script src="js/themeswitcher.js"></script>
 </body>
 
